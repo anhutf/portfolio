@@ -17,16 +17,18 @@
   <body>
     <article class="profile">
       <div class="avatar">
-        <img class="avatar-img" src="img/avatar.jpg" alt="Avatar of Anh Nhut" />
-        <p class="avatar-name">Anh Nhut</p>
+        <img class="avatar-img" src="img/32.jpg" alt="Avatar of Anh Nhut" />
+        <div class="avatar-name">
+          <p class="greeting">Hi, I'm</p>
+          <h1 class="name">Anh Nhut</h1>
+        </div>
       </div>
 
       <div class="objective">
-        <h1 class="objective-tilte">Career Objective</h1>
+        <h2 class="objective-tilte">Objective</h2>
         <p class="objective-content">
-          I looking forward to getting the experience, improve my skills,
-          develop my career. Have the opportunity to be contacted and work in a
-          programming environment, technology company.
+          I like to develop in frontend applications. I looking forward to
+          getting the experience, improve skills, develop my career.
         </p>
       </div>
 
@@ -38,7 +40,7 @@
               href="mailto:nguyenanhnhut96@gmail.com"
               target="_blank"
             >
-              <ion-icon class="social-icon" name="mail"></ion-icon>
+              <ion-icon class="social-icon mail" name="mail"></ion-icon>
             </a>
           </li>
           <li>
@@ -47,7 +49,10 @@
               href="https://linkedin.com/in/anhutf"
               target="_blank"
             >
-              <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+              <ion-icon
+                class="social-icon linkedin"
+                name="logo-linkedin"
+              ></ion-icon>
             </a>
           </li>
           <li>
@@ -56,20 +61,23 @@
               href="https://github.com/anhutf"
               target="_blank"
             >
-              <ion-icon class="social-icon" name="logo-github"></ion-icon>
+              <ion-icon
+                class="social-icon github"
+                name="logo-github"
+              ></ion-icon>
             </a>
           </li>
         </ul>
       </div>
     </article>
-    <menu class="skills">
+    <section class="skills">
       <div class="skill">
         <ion-icon class="skill-icon html-tag" name="logo-html5"></ion-icon>
-        <p class="skill-title">HTML5</p>
+        <p class="skill-title">HTML</p>
       </div>
       <div class="skill">
         <ion-icon class="skill-icon css-tag" name="logo-css3"></ion-icon>
-        <p class="skill-title">CSS3</p>
+        <p class="skill-title">CSS</p>
       </div>
       <div class="skill">
         <ion-icon class="skill-icon js-tag" name="logo-javascript"></ion-icon>
@@ -85,24 +93,65 @@
       </div>
 
       <a
-        href="https://linkedin.com/in/anhutf/details/certifications"
         class="certificate"
+        href="https://linkedin.com/in/anhutf/details/certifications"
+        target="_blank"
         >Certificate</a
       >
-    </menu>
-    <section>
-      <div class="email">Email 1</div>
-      <div class="email">Email 2</div>
-      <div class="email">Email 3</div>
-      <div class="email">Email 4</div>
-      <div class="email">Email 5</div>
-      <div class="email">Email 6</div>
-      <div class="email">Email 7</div>
-      <div class="email">Email 8</div>
-      <div class="email">Email 9</div>
-      <div class="email">Email 10</div>
     </section>
-    <main>Email view</main>
+
+    <section class="projects">
+      <h2 class="projects-heading">Projects</h2>
+      <div class="project">
+        <h3 class="project-title">Tiki exchange's trading data</h3>
+        <p>
+          Utilities to summary data, expand, combine the order list, volume
+          chart.
+        </p>
+      </div>
+      <div class="project">Project 2</div>
+      <div class="project">Project 3</div>
+      <div class="project">Project 4</div>
+      <div class="project">Project 5</div>
+      <div class="project">Project 6</div>
+      <div class="project">Project 7</div>
+      <div class="project">Project 8</div>
+      <div class="project">Project 9</div>
+      <div class="project">Project 10</div>
+    </section>
+    <main class="details">
+      <div class="detail">
+        <iframe
+          class="detail-view"
+          src="https://anhutf.github.io/exchange-tiki"
+          title="Tiki exchange's trading data"
+        ></iframe>
+        <div class="detail-content">
+          <div class="project-content">
+            <span>Languages:</span>
+            <p class="languages">HTML, CSS, Javascript</p>
+          </div>
+          <div class="project-content">
+            <span>Demo:</span
+            ><a
+              class="link demo"
+              href="https://anhutf.github.io/exchange-tiki"
+              target="_blank"
+              >https://anhutf.github.io/exchange-tiki</a
+            >
+          </div>
+          <div class="project-content">
+            <span>Source code:</span
+            ><a
+              class="link source-code"
+              href="https://github.com/anhutf/exchange-tiki"
+              target="_blank"
+              >https://github.com/anhutf/exchange-tiki</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script
       type="module"

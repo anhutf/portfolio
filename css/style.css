@@ -21,33 +21,13 @@ html {
 body {
   font-family: "Rubik", ans-serif;
   color: #343a40;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   height: 100vh;
   font-weight: 400;
 
   display: grid;
   grid-template-columns: 2fr 3fr 5fr;
   grid-template-rows: 8rem 1fr;
-}
-
-section {
-  background-color: #e9ecef;
-  padding: 3.2rem;
-  overflow: scroll;
-
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
-}
-
-.email {
-  background-color: #adb5bd;
-  height: 96px;
-  flex-shrink: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Profile */
@@ -70,18 +50,25 @@ section {
   width: 60%;
   border-radius: 50%;
   margin-bottom: 1.2rem;
-  transition: all 0.4s;
-
-  overflow: hidden;
 }
 
-.avatar-img:hover {
-  transform: scale(1.1);
-  padding: 2px;
-  background-image: linear-gradient(to right, #0ca678, #38d9a9);
-}
+/* .avatar-img:hover {
+  box-shadow: 0 0 0 2px #099268;
+} */
 
 .avatar-name {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.greeting {
+  color: #c3fae8;
+  font-size: 1.6rem;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.name {
   font-size: 2.4rem;
   font-weight: 700;
 }
@@ -94,12 +81,12 @@ section {
   color: #0ca678;
   font-size: 2rem;
   font-weight: 600;
+  text-transform: uppercase;
   text-align: center;
   padding-bottom: 1.2rem;
 }
 
 .objective-content {
-  font-size: 1.6rem;
   text-indent: 1.6rem;
   line-height: 1.4;
 }
@@ -125,6 +112,18 @@ section {
   border-radius: 50%;
 }
 
+.mail:hover {
+  background-color: #e03131;
+}
+
+.linkedin:hover {
+  background-color: #1971c2;
+}
+
+.github:hover {
+  background-color: #212529;
+}
+
 /* Skills */
 
 .skills {
@@ -138,7 +137,7 @@ section {
 }
 
 .skill {
-  width: 5rem;
+  width: 4rem;
   display: flex;
   gap: 0.8rem;
   flex-direction: column;
@@ -152,10 +151,11 @@ section {
   font-weight: 500;
 }
 
-.certificate {
+.certificate:link,
+.certificate:visited {
   margin-left: auto;
   display: inline-block;
-  font-size: 1.6rem;
+  text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
   background-color: #0ca678;
@@ -168,14 +168,21 @@ section {
   transition: all 0.4s;
 }
 
-.certificate:hover {
+.certificate:hover,
+.certificate:active {
   background-color: #099268;
 }
 
 .skill-icon {
-  height: 3.2rem;
-  width: 3.2rem;
+  height: 2.4rem;
+  width: 2.4rem;
   color: #fff;
+
+  transition: all 0.4s;
+}
+
+.skill:hover .skill-icon {
+  transform: translateY(-0.3rem) scale(1.1);
 }
 
 .html-tag {
@@ -196,4 +203,86 @@ section {
 
 .figma-tag {
   color: #f03e3e;
+}
+
+/* Projects */
+
+.projects {
+  background-color: #e9ecef;
+  padding: 3.2rem;
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.projects-heading {
+  color: #0ca678;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project {
+  padding: 1.2rem;
+  background-color: #adb5bd;
+  flex-shrink: 0;
+  border-radius: 7px;
+}
+
+.project-title {
+  color: #099268;
+  font-size: 1.8rem;
+  padding-bottom: 1.2rem;
+}
+
+/* Details */
+
+.details {
+  padding: 3.2rem 2.4rem;
+}
+
+.detail {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  border-radius: 7px;
+  overflow: hidden;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.detail-view {
+  width: 100%;
+  height: 60%;
+  border: none;
+}
+
+.detail-content {
+  padding: 0 1.2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.project-content span {
+  padding-right: 0.5rem;
+}
+
+.languages {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.link:link,
+.link:visited {
+  color: #0ca678;
+}
+
+.link:hover,
+.link:active {
+  color: #099268;
 }
