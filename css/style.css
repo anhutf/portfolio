@@ -133,7 +133,7 @@ body {
   display: flex;
   align-items: center;
   gap: 3.2rem;
-  padding: 0 3.2rem;
+  padding: 2.4rem 3.2rem;
 }
 
 .skill {
@@ -247,12 +247,35 @@ body {
 
 .details {
   padding: 3.2rem 2.4rem;
+  position: relative;
+}
+
+.btn-mobile {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.2rem;
+
+  width: 3.2rem;
+  height: 3.2rem;
+  border: none;
+  background: #e6fcf5;
+  border-radius: 7px;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #099268;
 }
 
 .detail {
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 12rem;
   gap: 2.4rem;
   border-radius: 7px;
   overflow: hidden;
@@ -262,7 +285,7 @@ body {
 
 .detail-view {
   width: 100%;
-  height: 70%;
+  height: 100%;
   border: none;
   border-bottom: 2px solid #e9ecef;
 }
@@ -272,6 +295,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
+
+.project-content {
+  overflow: hidden;
 }
 
 .project-content span {

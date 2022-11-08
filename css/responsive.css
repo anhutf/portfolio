@@ -1,0 +1,90 @@
+@media (max-width: 55em) {
+  body {
+    height: auto;
+
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 1fr;
+  }
+
+  .profile {
+    grid-column: 1 / -1;
+  }
+
+  .avatar-img {
+    width: 20rem;
+  }
+
+  .avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .objective-tilte {
+    text-align: left;
+  }
+
+  .info {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .skills {
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+
+  .projects {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 45em) {
+  html {
+    /* 9px / 16px = 0.5625 */
+    font-size: 56.25%;
+  }
+
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    height: auto;
+    overflow: auto;
+  }
+
+  .details {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .details-open .details {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    /* transform: translateX(0); */
+  }
+
+  .details-open .btn-mobile {
+    display: block;
+  }
+}

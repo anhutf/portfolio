@@ -26,5 +26,7 @@ const getProject = (index) => {
 projectList.forEach((project, index) => {
   project.addEventListener("click", () => {
     getProject(index);
+
+    document.querySelector("body").classList.add("details-open");
   });
 });
