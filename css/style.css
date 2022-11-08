@@ -41,7 +41,7 @@ body {
 }
 
 .avatar {
-  padding: 3.2rem 2.4rem;
+  padding: 4.8rem 2.4rem 3.2rem;
   background-color: #333;
   text-align: center;
 }
@@ -132,8 +132,14 @@ body {
   grid-column: 2 / -1;
   display: flex;
   align-items: center;
+  gap: 2.4rem;
+  padding: 3.2rem 2.4rem;
+}
+
+.skill-list {
+  display: flex;
+  align-items: center;
   gap: 3.2rem;
-  padding: 2.4rem 3.2rem;
 }
 
 .skill {
@@ -151,9 +157,12 @@ body {
   font-weight: 500;
 }
 
+.skill-certificate {
+  margin-left: auto;
+}
+
 .certificate:link,
 .certificate:visited {
-  margin-left: auto;
   display: inline-block;
   text-decoration: none;
   font-weight: 600;
@@ -209,7 +218,7 @@ body {
 
 .projects {
   background-color: #e9ecef;
-  padding: 3.2rem;
+  padding: 3.2rem 2.4rem;
   overflow: scroll;
 
   display: flex;
@@ -275,7 +284,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 12rem;
+  grid-template-rows: 1fr auto;
   gap: 2.4rem;
   border-radius: 7px;
   overflow: hidden;
@@ -291,14 +300,10 @@ body {
 }
 
 .detail-content {
-  padding: 0 1.2rem 1.2rem;
+  padding: 0 1.6rem 2.4rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-}
-
-.project-content {
-  overflow: hidden;
 }
 
 .project-content span {

@@ -1,4 +1,5 @@
 const projectList = document.querySelectorAll(".project");
+const btnClose = document.querySelector(".btn-mobile");
 
 // Get data
 const getProject = (index) => {
@@ -23,10 +24,16 @@ const getProject = (index) => {
     });
 };
 
+// Display details
 projectList.forEach((project, index) => {
   project.addEventListener("click", () => {
     getProject(index);
 
     document.querySelector("body").classList.add("details-open");
   });
+});
+
+// Close details
+btnClose.addEventListener("click", () => {
+  document.querySelector("body").classList.remove("details-open");
 });

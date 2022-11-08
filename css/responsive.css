@@ -51,6 +51,14 @@
     grid-template-columns: 1fr;
   }
 
+  .skills {
+    flex-direction: column;
+  }
+
+  .skill-certificate {
+    margin-left: 0;
+  }
+
   .projects {
     height: auto;
     overflow: auto;
