@@ -35,7 +35,7 @@ const displayDetail = (projects) => {
     project.addEventListener("click", () => {
       if (projects[index]["demo"] === "N/A") {
         detailView.innerHTML = `
-          <img class="demo-view" src="../img/demo-img.jpg" />
+          <p class="no-demo-view">Live Demo</p>
         `;
         demo.innerText = `N/A`;
       } else {

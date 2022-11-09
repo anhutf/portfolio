@@ -299,11 +299,23 @@ body {
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
 }
 
+.detail-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e9ecef;
+}
+
 .demo-view {
   width: 100%;
   height: 100%;
   border: none;
-  border-bottom: 2px solid #e9ecef;
+}
+
+.no-demo-view {
+  color: #63e6be;
+  font-size: 5rem;
+  font-weight: 500;
 }
 
 .detail-content {
