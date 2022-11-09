@@ -1,14 +1,23 @@
 [
   {
     "title": "Tiki exchange's trading data",
+    "description": "Utilities to summary data, expand, combine the order list, volume chart.",
     "languages": "HTML, CSS, Javascript",
     "demo": "https://anhutf.github.io/exchange-tiki",
     "source-code": "https://anhutf.github.io/exchange-tiki"
   },
   {
     "title": "Omnifood project - Meal business website",
+    "description": "Responsive web design. Build effects, optimizations and deployment.",
     "languages": "HTML, CSS",
     "demo": "https://anhutf.github.io/omnifood-project",
     "source-code": "https://github.com/anhutf/omnifood-project"
+  },
+  {
+    "title": "Node JS Command Line Tools",
+    "description": "Build a command line tool similar to ls command.",
+    "languages": "Javascript",
+    "demo": "N/A",
+    "source-code": "https://github.com/anhutf/list-nodejs"
   }
 ]

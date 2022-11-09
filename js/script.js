@@ -1,39 +1,66 @@
-const projectList = document.querySelectorAll(".project");
-const btnClose = document.querySelector(".btn-mobile");
+const projectsEl = document.querySelector(".projects");
+
+const detailView = document.querySelector(".detail-view");
+const languages = document.querySelector(".languages");
+const demo = document.querySelector(".demo");
+const sourceCode = document.querySelector(".source-code");
 
 // Get data
-const getProject = (index) => {
-  const detailView = document.querySelector(".detail-view");
-  const languages = document.querySelector(".languages");
-  const demo = document.querySelector(".demo");
-  const sourceCode = document.querySelector(".source-code");
+fetch(`data/project-list.json`)
+  .then((res) => res.json())
+  .then((projects) => {
+    displayProject(projects);
+    displayDetail(projects);
+  });
 
-  fetch(`data/project-list.json`)
-    .then((res) => res.json())
-    .then((data) => {
-      detailView.src = data[index]["demo"];
-      detailView.title = data[index]["title"];
+// Display projects list
+const displayProject = (projects) => {
+  projects.forEach((project) => {
+    const divEl = document.createElement("div");
+    divEl.classList.add("project");
+    divEl.innerHTML = `
+      <h3 class="project-title">${project["title"]}</h3>
+      <p>${project["description"]}</p>
+    `;
 
-      languages.innerText = data[index]["languages"];
-
-      demo.innerText = data[index]["demo"];
-      demo.href = data[index]["demo"];
-
-      sourceCode.innerText = data[index]["source-code"];
-      sourceCode.href = data[index]["source-code"];
-    });
+    projectsEl.appendChild(divEl);
+  });
 };
 
 // Display details
-projectList.forEach((project, index) => {
-  project.addEventListener("click", () => {
-    getProject(index);
+const displayDetail = (projects) => {
+  const projectList = document.querySelectorAll(".project");
 
-    document.querySelector("body").classList.add("details-open");
+  projectList.forEach((project, index) => {
+    project.addEventListener("click", () => {
+      if (projects[index]["demo"] === "N/A") {
+        detailView.innerHTML = `
+          <img class="demo-view" src="../img/demo-img.jpg" />
+        `;
+        demo.innerText = `N/A`;
+      } else {
+        detailView.innerHTML = `
+        <iframe class="demo-view" src="${projects[index]["demo"]}" title="${projects[index]["title"]}"></iframe>
+        `;
+        demo.innerHTML = `
+        <a class="link" href="${projects[index]["demo"]}" target="_blank" >${projects[index]["demo"]}</a>
+        `;
+      }
+
+      languages.innerText = projects[index]["languages"];
+
+      sourceCode.innerHTML = `
+      <a class="link" href="${projects[index]["source-code"]}" target="_blank" >${projects[index]["source-code"]}</a>
+      `;
+
+      document.querySelector("body").classList.add("details-open");
+    });
   });
-});
+};
 
 // Close details
+const btnClose = document.querySelector(".btn-mobile");
+
 btnClose.addEventListener("click", () => {
   document.querySelector("body").classList.remove("details-open");
 });

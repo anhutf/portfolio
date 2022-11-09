@@ -44,6 +44,8 @@ body {
   padding: 4.8rem 2.4rem 3.2rem;
   background-color: #333;
   text-align: center;
+  background-image: url("https://cosmos.network/_nuxt/img/abcd1c6.png");
+  background-size: cover;
 }
 
 .avatar-img {
@@ -100,7 +102,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 2.4rem;
+  gap: 1.6rem;
 }
 
 .social-icon {
@@ -261,11 +263,11 @@ body {
 
 .btn-mobile {
   position: absolute;
-  top: 1.6rem;
+  top: 9rem;
   right: 1.2rem;
 
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 3.4rem;
+  height: 3.4rem;
   border: none;
   background: #e6fcf5;
   border-radius: 7px;
@@ -274,9 +276,14 @@ body {
   display: none;
 }
 
+.btn-mobile:hover {
+  background: #c3fae8;
+  transform: scale(1.1);
+}
+
 .icon-mobile {
-  height: 3.2rem;
-  width: 3.2rem;
+  height: 3.4rem;
+  width: 3.4rem;
   color: #099268;
 }
 
@@ -292,7 +299,7 @@ body {
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
 }
 
-.detail-view {
+.demo-view {
   width: 100%;
   height: 100%;
   border: none;
@@ -306,7 +313,7 @@ body {
   gap: 1.2rem;
 }
 
-.project-content span {
+.content-name {
   padding-right: 0.5rem;
 }
 
