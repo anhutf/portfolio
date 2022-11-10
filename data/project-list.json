@@ -2,7 +2,7 @@
   {
     "title": "Tiki exchange's trading data",
     "description": "Utilities to summary data, expand, combine the order list, volume chart.",
-    "languages": "HTML, CSS, Javascript",
+    "languages": "Javascript, HTML, CSS",
     "demo": "https://anhutf.github.io/exchange-tiki",
     "source-code": "https://anhutf.github.io/exchange-tiki"
   },
@@ -19,5 +19,26 @@
     "languages": "Javascript",
     "demo": "N/A",
     "source-code": "https://github.com/anhutf/list-nodejs"
+  },
+  {
+    "title": "Secret message sharing app",
+    "description": "Create a secret messages and share link.",
+    "languages": "Javascript, HTML",
+    "demo": "N/A",
+    "source-code": "https://github.com/anhutf/secret-message"
+  },
+  {
+    "title": "Maze",
+    "description": "Using Canvas API",
+    "languages": "Javascript",
+    "demo": "N/A",
+    "source-code": "https://github.com/anhutf/maze"
+  },
+  {
+    "title": "Movie application design pattern",
+    "description": "Fetching movie data",
+    "languages": "Javascript",
+    "demo": "https://anhutf.github.io/fetching-movie-data/",
+    "source-code": "https://github.com/anhutf/fetching-movie-data"
   }
 ]

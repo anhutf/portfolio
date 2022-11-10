@@ -20,7 +20,7 @@ const displayProject = (projects) => {
     divEl.classList.add("project");
     divEl.innerHTML = `
       <h3 class="project-title">${project["title"]}</h3>
-      <p>${project["description"]}</p>
+      <p class="project-description">${project["description"]}</p>
     `;
 
     projectsEl.appendChild(divEl);

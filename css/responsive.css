@@ -1,4 +1,4 @@
-@media (max-width: 55em) {
+@media (max-width: 60em) {
   body {
     height: auto;
 
@@ -20,9 +20,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .objective {
   }
 
   .objective-tilte {
