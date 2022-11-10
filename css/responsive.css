@@ -28,7 +28,7 @@
 
   .info {
     position: fixed;
-    top: 0;
+    top: 2.4rem;
     right: 0;
     z-index: 9999;
   }
@@ -45,11 +45,6 @@
 }
 
 @media (max-width: 45em) {
-  html {
-    /* 9px / 16px = 0.5625 */
-    font-size: 56.25%;
-  }
-
   body {
     grid-template-columns: 1fr;
   }
@@ -100,5 +95,12 @@
 
   .details-open .btn-mobile {
     display: block;
+  }
+}
+
+@media (max-width: 30em) {
+  html {
+    /* 9px / 16px = 0.5625 */
+    font-size: 56.25%;
   }
 }

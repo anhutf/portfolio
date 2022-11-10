@@ -22,23 +22,58 @@
   },
   {
     "title": "Secret message sharing app",
-    "description": "Create a secret messages and share link.",
+    "description": "Create a secret messages. Get link and share with friends.",
     "languages": "Javascript, HTML",
-    "demo": "N/A",
+    "demo": "https://secret-message-rho-smoky.vercel.app",
     "source-code": "https://github.com/anhutf/secret-message"
   },
   {
-    "title": "Maze",
-    "description": "Using Canvas API",
+    "title": "Maze Game",
+    "description": "Use Matter.js (2D physics engine for the web) build maze game.",
     "languages": "Javascript",
-    "demo": "N/A",
+    "demo": "https://anhutf.github.io/maze",
     "source-code": "https://github.com/anhutf/maze"
   },
   {
     "title": "Movie application design pattern",
-    "description": "Fetching movie data",
+    "description": "Search for movies, compare 2 movies to choose the better movie.",
     "languages": "Javascript",
     "demo": "https://anhutf.github.io/fetching-movie-data/",
     "source-code": "https://github.com/anhutf/fetching-movie-data"
+  },
+  {
+    "title": "Timer",
+    "description": "Build a stopwatch.",
+    "languages": "Javascript, HTML, CSS",
+    "demo": "https://anhutf.github.io/timer",
+    "source-code": "https://github.com/anhutf/timer"
+  },
+  {
+    "title": "Exchange rate Calculator",
+    "description": "Get exchange rates of currencies.",
+    "languages": "Javascript, HTML, CSS",
+    "demo": "https://anhutf.github.io/exchange-rate",
+    "source-code": "https://github.com/anhutf/exchange-rate"
+  },
+  {
+    "title": "Custom video player",
+    "description": "Custom from default video player.",
+    "languages": "Javascript, HTML, CSS",
+    "demo": "https://anhutf.github.io/custom-video-player",
+    "source-code": "https://github.com/anhutf/custom-video-player"
+  },
+  {
+    "title": "Movie Seat Booking",
+    "description": "Pick a movie, select seat and see the price.",
+    "languages": "Javascript, HTML, CSS",
+    "demo": "https://anhutf.github.io/movie-seat-booking",
+    "source-code": "https://github.com/anhutf/movie-seat-booking"
+  },
+  {
+    "title": "Form Validator",
+    "description": "Build form validator. Check user name, email, password.",
+    "languages": "Javascript, HTML, CSS",
+    "demo": "https://anhutf.github.io/form-validator",
+    "source-code": "https://github.com/anhutf/form-validator"
   }
 ]
