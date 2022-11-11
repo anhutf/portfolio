@@ -138,6 +138,14 @@ body {
   padding: 3.2rem 2.4rem;
 }
 
+.skills-heading {
+  display: none;
+  color: #0ca678;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .skill-list {
   display: flex;
   align-items: center;
@@ -219,7 +227,7 @@ body {
 /* Projects */
 
 .projects {
-  background-color: #e9ecef;
+  background-color: #f1f3f5;
   padding: 3.2rem 2.4rem;
   overflow: scroll;
 
@@ -237,7 +245,7 @@ body {
 
 .project {
   padding: 1.2rem;
-  background-color: #dee2e6;
+  background-color: #e9ecef;
   flex-shrink: 0;
   border-radius: 7px;
 
@@ -245,7 +253,7 @@ body {
 }
 
 .project:hover {
-  background-color: #ced4da;
+  background-color: #dee2e6;
 }
 
 .project-title {
