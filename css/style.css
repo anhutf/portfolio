@@ -44,7 +44,7 @@ body {
   padding: 4.8rem 2.4rem 3.2rem;
   background-color: #333;
   text-align: center;
-  background-image: url("https://cosmos.network/_nuxt/img/abcd1c6.png");
+  background-image: url("../img/bg-avatar.png");
   background-size: cover;
 }
 
