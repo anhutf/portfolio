@@ -14,6 +14,34 @@
     "source-code": "https://github.com/anhutf/omnifood-project"
   },
   {
+    "title": "25 plus 5 Clock",
+    "description": "Build 25 plus 5 Clock - project on FreeCodeCamp.",
+    "languages": "ReactJS",
+    "demo": "https://anhutf.github.io/25plus5clock",
+    "source-code": "https://github.com/anhutf/25plus5clock"
+  },
+  {
+    "title": "Calculator",
+    "description": "Build Math calculator - project on FreeCodeCamp.",
+    "languages": "ReactJS",
+    "demo": "https://anhutf.github.io/calculator",
+    "source-code": "https://github.com/anhutf/calculator"
+  },
+  {
+    "title": "Drum Machine",
+    "description": "Online Drum machine - project on FreeCodeCamp.",
+    "languages": "Javascript, HTML, CSS",
+    "demo": "https://anhutf.github.io/drum-machine",
+    "source-code": "https://github.com/anhutf/drum-machine"
+  },
+  {
+    "title": "Markdown Previewer",
+    "description": "The online markdown editor with live preview - project on FreeCodeCamp.",
+    "languages": "ReactJS",
+    "demo": "https://anhutf.github.io/markdown-previewer",
+    "source-code": "https://github.com/anhutf/markdown-previewer"
+  },
+  {
     "title": "Node JS Command Line Tools",
     "description": "Build a command line tool similar to ls command.",
     "languages": "Javascript",
